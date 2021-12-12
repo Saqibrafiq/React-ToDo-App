@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+
+html {
+  line-height: 1.15;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    190deg,
+    rgb(178, 166, 255) 0%,
+    rgb(109, 105, 126) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #222;
+}
+
+.App {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.App h1 {
+  display: inline;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #e1ebfd;
+  text-shadow: 0 0 5px #433aa8, 3px -1px 5px #271c6c;
+}
+
+.addTodos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.todo-input {
+  min-width: 15rem;
+  width: 40vw;
+
+  max-height: 2.5rem;
+  background-color: #e1ebfd;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+
+  align-self: center;
+}
+.todo-input:focus {
+  outline: none;
+  border: 2px solid rgb(67, 58, 168);
+}
+
+.add-btn {
+  margin-left: 1rem;
+  background-color: #271c6c;
+  color: #e1ebfd;
+  border-radius: 5px;
+  border: 2px solid #e1ebfd;
+  width: 7rem;
+  height: 2rem;
+  cursor: pointer;
+  box-shadow: 2px 4px 10px #271c6c;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn:focus {
+  outline: none;
+}
+
+.del-btn{
+    position: absolute;
+    float: right;
+    margin: 5rem 0 0 13rem;
+    padding: 0.1rem;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  background: rgb(180, 182, 218);
+  background: radial-gradient(
+    circle,
+    hsla(237, 100%, 85%, 0.9) 0%,
+    hsla(217, 100%, 94%, 0.9) 100%
+  );
+
+  margin: 0 1rem 2rem 2rem;
+  height: 8rem;
+  width: 18rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.card:hover {
+    height: 7.9rem;
+    width: 17.9rem;
+    background: rgb(151, 156, 255);
+    background: radial-gradient(
+      circle,
+      hsla(212, 100%, 80%, 0.9) 0%,
+      hsla(219, 96%, 70%, 0.9) 100%
+    );  
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+    .todo-input {
+        min-width: 5rem;
+        width: 40vw;
+        padding: 0.5rem 1rem;
+        align-self: center;
+    }
+    .card {
+        height: 6rem;
+        width: 15rem;
+        margin-left: 2.5rem;      
+    }
+    .card:hover {
+        height: 5.9rem;
+        width: 14.9rem;
+    }
+    .del-btn{
+        margin-left: 10.5rem;
+        margin-top: 3rem;
+    }
+}
