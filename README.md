@@ -7,13 +7,13 @@
 
 ## Quick Start
 
-# Install dependencies
+### Install dependencies
 npm install
 
-# Serve on localhost:3000
+### Serve on localhost:3000
 npm start
 
-# Build for production
+### Build for production
 npm run build# React-Todo-App
 
 ![screenshot](https://user-images.githubusercontent.com/14060649/145698602-4da73ea7-a5f9-4655-8b92-328a12d057cf.jpg)
